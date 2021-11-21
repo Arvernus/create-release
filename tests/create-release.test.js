@@ -53,6 +53,7 @@ describe('Create Release', () => {
       name: 'myRelease',
       body: 'myBody',
       draft: false,
+      generate_release_notes: false,
       prerelease: false,
       target_commitish: 'sha'
     });
@@ -76,6 +77,7 @@ describe('Create Release', () => {
       name: 'myRelease',
       body: 'myBody',
       draft: true,
+      generate_release_notes: false,
       prerelease: false,
       target_commitish: 'sha'
     });
@@ -99,6 +101,7 @@ describe('Create Release', () => {
       name: 'myRelease',
       body: 'myBody',
       draft: false,
+      generate_release_notes: false,
       prerelease: true,
       target_commitish: 'sha'
     });
@@ -122,6 +125,7 @@ describe('Create Release', () => {
       name: 'myRelease',
       body: '',
       draft: false,
+      generate_release_notes: false,
       prerelease: false,
       target_commitish: 'sha'
     });
@@ -149,6 +153,7 @@ describe('Create Release', () => {
       name: 'myRelease',
       body: '# this is a release\nThe markdown is strong in this one.',
       draft: false,
+      generate_release_notes: false,
       prerelease: false,
       target_commitish: 'sha'
     });
